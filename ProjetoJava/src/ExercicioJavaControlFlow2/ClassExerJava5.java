@@ -9,7 +9,8 @@ public class ClassExerJava5 {
 */
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);
-		int lados, medida, area;
+		int lados, medida;
+		double area ;
 		System.out.println("Informe o número de lados de um polígono regular: ");
 		lados = ler.nextInt();
 		
@@ -17,7 +18,7 @@ public class ClassExerJava5 {
 		medida = ler.nextInt();
 		
 		if(lados == 3) {
-			area = (medida*2) / 2;
+			area = (Math.pow(lados, 2) * Math.sqrt(3)) / 4;
 			System.out.println("Este polígono é um TRIÂNGULO \nO valor da sua área é de: " + area + "cm");
 		}
 		else if(lados == 4) {
